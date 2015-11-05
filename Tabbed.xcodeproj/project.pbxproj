@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		1102B90C1BE9E80000E3D02B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1102B90B1BE9E80000E3D02B /* main.m */; };
 		1102B90F1BE9E80000E3D02B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1102B90E1BE9E80000E3D02B /* AppDelegate.m */; };
-		1102B9121BE9E80000E3D02B /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1102B9111BE9E80000E3D02B /* FirstViewController.m */; };
+		1102B9121BE9E80000E3D02B /* RestaurantListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1102B9111BE9E80000E3D02B /* RestaurantListViewController.m */; };
 		1102B9151BE9E80000E3D02B /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1102B9141BE9E80000E3D02B /* SecondViewController.m */; };
 		1102B9181BE9E80000E3D02B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1102B9161BE9E80000E3D02B /* Main.storyboard */; };
 		1102B91A1BE9E80000E3D02B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1102B9191BE9E80000E3D02B /* Images.xcassets */; };
 		1102B91D1BE9E80000E3D02B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1102B91B1BE9E80000E3D02B /* LaunchScreen.xib */; };
 		1102B9291BE9E80000E3D02B /* TabbedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1102B9281BE9E80000E3D02B /* TabbedTests.m */; };
+		1102B93A1BEA210000E3D02B /* HomeScreenTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1102B9391BEA210000E3D02B /* HomeScreenTabBarController.m */; };
+		1102B93E1BEA336F00E3D02B /* RestaurantInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1102B93D1BEA336F00E3D02B /* RestaurantInformation.m */; };
+		1102B9411BEB239100E3D02B /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1102B9401BEB239100E3D02B /* MenuTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,8 +36,8 @@
 		1102B90B1BE9E80000E3D02B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1102B90D1BE9E80000E3D02B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1102B90E1BE9E80000E3D02B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1102B9101BE9E80000E3D02B /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		1102B9111BE9E80000E3D02B /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		1102B9101BE9E80000E3D02B /* RestaurantListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RestaurantListViewController.h; sourceTree = "<group>"; };
+		1102B9111BE9E80000E3D02B /* RestaurantListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RestaurantListViewController.m; sourceTree = "<group>"; };
 		1102B9131BE9E80000E3D02B /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		1102B9141BE9E80000E3D02B /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		1102B9171BE9E80000E3D02B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,6 +46,12 @@
 		1102B9221BE9E80000E3D02B /* TabbedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabbedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1102B9271BE9E80000E3D02B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1102B9281BE9E80000E3D02B /* TabbedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabbedTests.m; sourceTree = "<group>"; };
+		1102B9381BEA210000E3D02B /* HomeScreenTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeScreenTabBarController.h; sourceTree = "<group>"; };
+		1102B9391BEA210000E3D02B /* HomeScreenTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeScreenTabBarController.m; sourceTree = "<group>"; };
+		1102B93C1BEA336F00E3D02B /* RestaurantInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantInformation.h; sourceTree = "<group>"; };
+		1102B93D1BEA336F00E3D02B /* RestaurantInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantInformation.m; sourceTree = "<group>"; };
+		1102B93F1BEB239100E3D02B /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
+		1102B9401BEB239100E3D02B /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,13 +93,12 @@
 		1102B9081BE9E80000E3D02B /* Tabbed */ = {
 			isa = PBXGroup;
 			children = (
+				1102B93B1BEA334A00E3D02B /* Restaurant Data */,
 				1102B90D1BE9E80000E3D02B /* AppDelegate.h */,
 				1102B90E1BE9E80000E3D02B /* AppDelegate.m */,
-				1102B9101BE9E80000E3D02B /* FirstViewController.h */,
-				1102B9111BE9E80000E3D02B /* FirstViewController.m */,
-				1102B9131BE9E80000E3D02B /* SecondViewController.h */,
-				1102B9141BE9E80000E3D02B /* SecondViewController.m */,
-				1102B9161BE9E80000E3D02B /* Main.storyboard */,
+				1102B9101BE9E80000E3D02B /* RestaurantListViewController.h */,
+				1102B9111BE9E80000E3D02B /* RestaurantListViewController.m */,
+				1102B9321BE9E85400E3D02B /* Visual Files */,
 				1102B9191BE9E80000E3D02B /* Images.xcassets */,
 				1102B91B1BE9E80000E3D02B /* LaunchScreen.xib */,
 				1102B9091BE9E80000E3D02B /* Supporting Files */,
@@ -122,6 +130,29 @@
 				1102B9271BE9E80000E3D02B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1102B9321BE9E85400E3D02B /* Visual Files */ = {
+			isa = PBXGroup;
+			children = (
+				1102B9161BE9E80000E3D02B /* Main.storyboard */,
+				1102B9131BE9E80000E3D02B /* SecondViewController.h */,
+				1102B9141BE9E80000E3D02B /* SecondViewController.m */,
+				1102B9381BEA210000E3D02B /* HomeScreenTabBarController.h */,
+				1102B9391BEA210000E3D02B /* HomeScreenTabBarController.m */,
+				1102B93F1BEB239100E3D02B /* MenuTableViewController.h */,
+				1102B9401BEB239100E3D02B /* MenuTableViewController.m */,
+			);
+			name = "Visual Files";
+			sourceTree = "<group>";
+		};
+		1102B93B1BEA334A00E3D02B /* Restaurant Data */ = {
+			isa = PBXGroup;
+			children = (
+				1102B93C1BEA336F00E3D02B /* RestaurantInformation.h */,
+				1102B93D1BEA336F00E3D02B /* RestaurantInformation.m */,
+			);
+			name = "Restaurant Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,8 +256,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1102B9151BE9E80000E3D02B /* SecondViewController.m in Sources */,
+				1102B93A1BEA210000E3D02B /* HomeScreenTabBarController.m in Sources */,
 				1102B90F1BE9E80000E3D02B /* AppDelegate.m in Sources */,
-				1102B9121BE9E80000E3D02B /* FirstViewController.m in Sources */,
+				1102B93E1BEA336F00E3D02B /* RestaurantInformation.m in Sources */,
+				1102B9121BE9E80000E3D02B /* RestaurantListViewController.m in Sources */,
+				1102B9411BEB239100E3D02B /* MenuTableViewController.m in Sources */,
 				1102B90C1BE9E80000E3D02B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
