@@ -16,8 +16,11 @@
 		1102B91D1BE9E80000E3D02B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1102B91B1BE9E80000E3D02B /* LaunchScreen.xib */; };
 		1102B9291BE9E80000E3D02B /* TabbedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1102B9281BE9E80000E3D02B /* TabbedTests.m */; };
 		1102B93A1BEA210000E3D02B /* HomeScreenTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1102B9391BEA210000E3D02B /* HomeScreenTabBarController.m */; };
-		1102B93E1BEA336F00E3D02B /* RestaurantInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1102B93D1BEA336F00E3D02B /* RestaurantInformation.m */; };
+		1102B93E1BEA336F00E3D02B /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1102B93D1BEA336F00E3D02B /* Restaurant.m */; };
 		1102B9411BEB239100E3D02B /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1102B9401BEB239100E3D02B /* MenuTableViewController.m */; };
+		1102B9441BEB7E1100E3D02B /* RestaurantIndexController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1102B9431BEB7E1100E3D02B /* RestaurantIndexController.m */; };
+		1102B9481BEB80D600E3D02B /* RestaurantListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1102B9461BEB80D600E3D02B /* RestaurantListCell.m */; };
+		1102B9491BEB80D600E3D02B /* RestaurantListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1102B9471BEB80D600E3D02B /* RestaurantListCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,10 +51,15 @@
 		1102B9281BE9E80000E3D02B /* TabbedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabbedTests.m; sourceTree = "<group>"; };
 		1102B9381BEA210000E3D02B /* HomeScreenTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeScreenTabBarController.h; sourceTree = "<group>"; };
 		1102B9391BEA210000E3D02B /* HomeScreenTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeScreenTabBarController.m; sourceTree = "<group>"; };
-		1102B93C1BEA336F00E3D02B /* RestaurantInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantInformation.h; sourceTree = "<group>"; };
-		1102B93D1BEA336F00E3D02B /* RestaurantInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantInformation.m; sourceTree = "<group>"; };
+		1102B93C1BEA336F00E3D02B /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
+		1102B93D1BEA336F00E3D02B /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
 		1102B93F1BEB239100E3D02B /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
 		1102B9401BEB239100E3D02B /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
+		1102B9421BEB7E1100E3D02B /* RestaurantIndexController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantIndexController.h; sourceTree = "<group>"; };
+		1102B9431BEB7E1100E3D02B /* RestaurantIndexController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantIndexController.m; sourceTree = "<group>"; };
+		1102B9451BEB80D600E3D02B /* RestaurantListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantListCell.h; sourceTree = "<group>"; };
+		1102B9461BEB80D600E3D02B /* RestaurantListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantListCell.m; sourceTree = "<group>"; };
+		1102B9471BEB80D600E3D02B /* RestaurantListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RestaurantListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +110,8 @@
 				1102B9191BE9E80000E3D02B /* Images.xcassets */,
 				1102B91B1BE9E80000E3D02B /* LaunchScreen.xib */,
 				1102B9091BE9E80000E3D02B /* Supporting Files */,
+				1102B9421BEB7E1100E3D02B /* RestaurantIndexController.h */,
+				1102B9431BEB7E1100E3D02B /* RestaurantIndexController.m */,
 			);
 			path = Tabbed;
 			sourceTree = "<group>";
@@ -142,6 +152,9 @@
 				1102B9391BEA210000E3D02B /* HomeScreenTabBarController.m */,
 				1102B93F1BEB239100E3D02B /* MenuTableViewController.h */,
 				1102B9401BEB239100E3D02B /* MenuTableViewController.m */,
+				1102B9451BEB80D600E3D02B /* RestaurantListCell.h */,
+				1102B9461BEB80D600E3D02B /* RestaurantListCell.m */,
+				1102B9471BEB80D600E3D02B /* RestaurantListCell.xib */,
 			);
 			name = "Visual Files";
 			sourceTree = "<group>";
@@ -149,8 +162,8 @@
 		1102B93B1BEA334A00E3D02B /* Restaurant Data */ = {
 			isa = PBXGroup;
 			children = (
-				1102B93C1BEA336F00E3D02B /* RestaurantInformation.h */,
-				1102B93D1BEA336F00E3D02B /* RestaurantInformation.m */,
+				1102B93C1BEA336F00E3D02B /* Restaurant.h */,
+				1102B93D1BEA336F00E3D02B /* Restaurant.m */,
 			);
 			name = "Restaurant Data";
 			sourceTree = "<group>";
@@ -235,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1102B9491BEB80D600E3D02B /* RestaurantListCell.xib in Resources */,
 				1102B9181BE9E80000E3D02B /* Main.storyboard in Resources */,
 				1102B91D1BE9E80000E3D02B /* LaunchScreen.xib in Resources */,
 				1102B91A1BE9E80000E3D02B /* Images.xcassets in Resources */,
@@ -255,10 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1102B9481BEB80D600E3D02B /* RestaurantListCell.m in Sources */,
 				1102B9151BE9E80000E3D02B /* SecondViewController.m in Sources */,
 				1102B93A1BEA210000E3D02B /* HomeScreenTabBarController.m in Sources */,
 				1102B90F1BE9E80000E3D02B /* AppDelegate.m in Sources */,
-				1102B93E1BEA336F00E3D02B /* RestaurantInformation.m in Sources */,
+				1102B9441BEB7E1100E3D02B /* RestaurantIndexController.m in Sources */,
+				1102B93E1BEA336F00E3D02B /* Restaurant.m in Sources */,
 				1102B9121BE9E80000E3D02B /* RestaurantListViewController.m in Sources */,
 				1102B9411BEB239100E3D02B /* MenuTableViewController.m in Sources */,
 				1102B90C1BE9E80000E3D02B /* main.m in Sources */,

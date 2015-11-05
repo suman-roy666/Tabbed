@@ -8,10 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface RestaurantInformation : NSObject
+@interface Restaurant : NSObject
 
-
-@property NSMutableDictionary *something;
-+ (id)getSharedInstance;
+@property NSString *name;
+@property NSString *imagePath;
 
 @end

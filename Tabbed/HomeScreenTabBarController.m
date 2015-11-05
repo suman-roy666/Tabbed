@@ -7,17 +7,13 @@
 //
 
 #import "HomeScreenTabBarController.h"
-#import "RestaurantInformation.h"
 
 @interface HomeScreenTabBarController ()
 
 
 @end
 
-@implementation HomeScreenTabBarController{
-    
-    RestaurantInformation *rinfo;
-}
+@implementation HomeScreenTabBarController
 
 static NSMutableArray *currentTabViewControllers;
 static NSArray *allTabViewControllers;

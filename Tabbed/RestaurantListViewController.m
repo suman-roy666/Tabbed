@@ -7,19 +7,24 @@
 //
 
 #import "RestaurantListViewController.h"
-#import "RestaurantInformation.h"
+#import "RestaurantListCell.h"
+#import "MenuTableViewController.h"
 
 @interface RestaurantListViewController ()
-@property (weak, nonatomic) IBOutlet UITableView *restaurantListTableView;
-
 @end
 
 @implementation RestaurantListViewController
-    
+
+NSString *cellIdentifier = @"RestaurantListCell";
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [ self.tableView registerNib:[ UINib nibWithNibName:cellIdentifier
+                                                 bundle:nil]
+          forCellReuseIdentifier:cellIdentifier ];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -29,14 +34,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UITableViewCell *cell = [ tableView dequeueReusableCellWithIdentifier:@"Restaurant List Cell" ];
+    RestaurantListCell *cell = [ tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
-    if ( cell == nil ){
-        
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                      reuseIdentifier:@"Restaurant List Cell"];
-        
-    }
+//    if ( cell == nil ){
+//        
+//        
+//        cell = [[RestaurantListCell alloc] initWithStyle:UITableViewCellStyleDefault
+//                                      reuseIdentifier:@"RestaurantListCell"];
+//        
+//    }
     
     return cell;
     
@@ -45,6 +51,16 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    MenuTableViewController *menuView = [[ MenuTableViewController alloc ] init ];
+    
+    [ menuView setTitle:@"Menu" ];
+    
+    [ self.navigationController pushViewController:menuView animated:YES ];
+    
 }
 
 @end

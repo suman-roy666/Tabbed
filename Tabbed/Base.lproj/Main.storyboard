@@ -8,23 +8,12 @@
         <scene sceneID="wtB-9c-JMF">
             <objects>
                 <tableViewController title="Restaurant List View Controller" id="ATG-aS-djS" userLabel="Restaurant List View Controller" customClass="RestaurantListViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="D0R-l1-VYj">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="22" sectionFooterHeight="22" id="D0R-l1-VYj">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Restaurant List Cell" id="WpD-vU-AJa">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WpD-vU-AJa" id="oE1-Vc-ufY">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="ncb-iZ-WPl" kind="show" id="NAC-IY-jUC"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="ATG-aS-djS" id="ejE-V9-CZM"/>
-                            <outlet property="delegate" destination="ATG-aS-djS" id="wyb-go-dwH"/>
+                            <outlet property="dataSource" destination="ATG-aS-djS" id="gE1-Az-i88"/>
+                            <outlet property="delegate" destination="ATG-aS-djS" id="ZNt-DL-ycZ"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Restaurants" id="Bxu-4n-4Fk" userLabel="Restaurant List View Controller"/>
@@ -40,85 +29,36 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="fWW-nG-mCZ">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Menu Cell" id="Egm-bn-cQA">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Egm-bn-cQA" id="dkI-tX-apC">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="VuY-gg-cq1" kind="show" id="3s8-Tm-yqa"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="5rf-KJ-wgG" id="49m-aI-sME"/>
                             <outlet property="delegate" destination="5rf-KJ-wgG" id="e3E-yI-aWM"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Menu" id="ooP-Md-6Y0" userLabel="Menu View Controller"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZEs-g0-zYl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3500.25" y="-473.5"/>
+            <point key="canvasLocation" x="2709.75" y="-460.5"/>
         </scene>
         <!--Submenu View Controller-->
         <scene sceneID="1ZD-qi-af6">
             <objects>
-                <tableViewController id="bzB-6B-FBy" userLabel="Submenu View Controller" sceneMemberID="viewController">
+                <tableViewController title="Submenu" id="bzB-6B-FBy" userLabel="Submenu View Controller" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="wXW-fU-dyb">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7MN-G9-yF6">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7MN-G9-yF6" id="ckl-Vu-xmL">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="bzB-6B-FBy" id="ytV-SM-Qk9"/>
                             <outlet property="delegate" destination="bzB-6B-FBy" id="kkt-Ij-YRR"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Submenu" id="b0T-8g-b5b" userLabel="Submenu View Controller"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wsw-9l-nkX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5261.25" y="-482.5"/>
-        </scene>
-        <!--Submenu Navigation Controller-->
-        <scene sceneID="xim-Cz-2vv">
-            <objects>
-                <navigationController title="Submenu Navigation Controller" id="VuY-gg-cq1" userLabel="Submenu Navigation Controller" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oBp-EF-SCs">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="bzB-6B-FBy" kind="relationship" relationship="rootViewController" id="S2E-19-5UW"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CPw-jb-0ce" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4350.75" y="-482.5"/>
-        </scene>
-        <!--Menu Navigation Controller-->
-        <scene sceneID="h9p-Yw-rLK">
-            <objects>
-                <navigationController title="Menu Navigation Controller" id="ncb-iZ-WPl" userLabel="Menu Navigation Controller" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="S1A-63-6rK">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="5rf-KJ-wgG" kind="relationship" relationship="rootViewController" id="Uu3-nE-Cza"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WF1-j5-FRs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2530.5" y="-473"/>
+            <point key="canvasLocation" x="3758.25" y="-460.5"/>
         </scene>
         <!--Restaurant Navigation Controller-->
         <scene sceneID="Dgp-uL-k5V">
