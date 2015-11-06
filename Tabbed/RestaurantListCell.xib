@@ -42,7 +42,11 @@
                     </mask>
                 </variation>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="534.5" y="412.5"/>
+            <connections>
+                <outlet property="restaurantCellImage" destination="9os-vm-L2c" id="Qen-c3-olp"/>
+                <outlet property="restaurantCellLabel" destination="8Vm-4e-9wd" id="bSv-vQ-liI"/>
+            </connections>
+            <point key="canvasLocation" x="534" y="412"/>
         </tableViewCell>
     </objects>
 </document>

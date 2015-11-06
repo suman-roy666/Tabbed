@@ -12,5 +12,6 @@
 
 @property NSString *name;
 @property NSString *imagePath;
+@property NSArray *menu;
 
 @end

@@ -6,17 +6,27 @@
 //  Copyright (c) 2015 sourcebits. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "ItemDisplayViewController.h"
+#import "RestaurantIndexController.h"
 
-@interface SecondViewController ()
+@interface ItemDisplayViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation ItemDisplayViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+   
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    
+    RestaurantIndexController *restIdx= [ RestaurantIndexController getRestaurantIndexController ];
+    
+    [ self.itemDisplayLabel setText:restIdx.item ];
 }
 
 - (void)didReceiveMemoryWarning {

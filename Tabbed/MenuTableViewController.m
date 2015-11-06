@@ -7,6 +7,7 @@
 //
 
 #import "MenuTableViewController.h"
+#import "FoodItemsTableViewController.h"
 
 @interface MenuTableViewController ()
 
@@ -22,6 +23,8 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    [ self setTitle: self.currentRestaurant.name ];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,7 +36,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 5;
+    return [ self.currentRestaurant.menu count ];
 }
 
 
@@ -48,9 +51,21 @@
         
     }
     
+    cell.text = self.currentRestaurant.menu[ indexPath.row ][0];
+    
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    FoodItemsTableViewController *foodItemsView = [[ FoodItemsTableViewController alloc] init ];
+    
+    foodItemsView.foodItems = [ NSArray arrayWithArray:self.currentRestaurant.menu[ indexPath.row ] ];
+    
+    [ self.navigationController pushViewController:foodItemsView animated:YES ];
+    
+    
+}
 
 /*
 // Override to support conditional editing of the table view.

@@ -7,17 +7,21 @@
 //
 
 #import "HomeScreenTabBarController.h"
+#import "RestaurantIndexController.h"
+#import "ItemDisplayViewController.h"
 
 @interface HomeScreenTabBarController ()
 
 
 @end
 
-@implementation HomeScreenTabBarController
+@implementation HomeScreenTabBarController{
+    
+    RestaurantIndexController *restIdx;
+}
 
 static NSMutableArray *currentTabViewControllers;
 static NSArray *allTabViewControllers;
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -31,6 +35,10 @@ static NSArray *allTabViewControllers;
     
     [ self setViewControllers:currentTabViewControllers ];
     
+    restIdx = [ RestaurantIndexController getRestaurantIndexController ];
+    
+    [ restIdx addObserver:self forKeyPath:@"item" options: (NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew) context:nil ];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,7 +51,18 @@ static NSArray *allTabViewControllers;
                         change:(NSDictionary *)change
                        context:(void *)context{
     
-    [ self setViewControllers:allTabViewControllers ];
+    if ( ![restIdx.item isEqualToString:@""] ) {
+        
+        ItemDisplayViewController *itemDisplayView = [ allTabViewControllers objectAtIndex:1 ];
+        
+        [ itemDisplayView.itemDisplayLabel setText:restIdx.item ];
+        
+        [ self setViewControllers:allTabViewControllers animated:YES ];
+        
+        [ self setSelectedViewController:allTabViewControllers[1] ];
+    }
+    
+    
 }
 
 /*

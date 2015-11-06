@@ -13,6 +13,9 @@
 
 @property NSArray *restaurantIndex;
 
+@property NSString *item;
+
 +(id) getRestaurantIndexController;
+
 
 @end

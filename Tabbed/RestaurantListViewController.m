@@ -8,12 +8,17 @@
 
 #import "RestaurantListViewController.h"
 #import "RestaurantListCell.h"
+#import "RestaurantIndexController.h"
+#import "Restaurant.h"
 #import "MenuTableViewController.h"
 
 @interface RestaurantListViewController ()
 @end
 
-@implementation RestaurantListViewController
+@implementation RestaurantListViewController{
+    
+    RestaurantIndexController *restIdx;
+}
 
 NSString *cellIdentifier = @"RestaurantListCell";
 
@@ -25,24 +30,22 @@ NSString *cellIdentifier = @"RestaurantListCell";
     [ self.tableView registerNib:[ UINib nibWithNibName:cellIdentifier
                                                  bundle:nil]
           forCellReuseIdentifier:cellIdentifier ];
+    
+    restIdx = [ RestaurantIndexController getRestaurantIndexController ];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 5;
+    return [ restIdx.restaurantIndex count  ];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     RestaurantListCell *cell = [ tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
-//    if ( cell == nil ){
-//        
-//        
-//        cell = [[RestaurantListCell alloc] initWithStyle:UITableViewCellStyleDefault
-//                                      reuseIdentifier:@"RestaurantListCell"];
-//        
-//    }
+    Restaurant *restaurantToDisplay = [ restIdx.restaurantIndex objectAtIndex:indexPath.row ];
+    
+    cell.restaurantCellLabel.text = [ restaurantToDisplay name ];
     
     return cell;
     
@@ -57,7 +60,7 @@ NSString *cellIdentifier = @"RestaurantListCell";
     
     MenuTableViewController *menuView = [[ MenuTableViewController alloc ] init ];
     
-    [ menuView setTitle:@"Menu" ];
+    [ menuView setCurrentRestaurant: [ restIdx.restaurantIndex objectAtIndex:indexPath.row ] ];
     
     [ self.navigationController pushViewController:menuView animated:YES ];
     

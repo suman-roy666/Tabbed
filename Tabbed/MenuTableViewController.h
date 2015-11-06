@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Restaurant.h"
 
 @interface MenuTableViewController : UITableViewController
+
+@property Restaurant *currentRestaurant;
 
 @end
