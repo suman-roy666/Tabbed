@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>1D73A571-3550-403A-8A9B-561A82943CD3</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Tabbed</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>71824E101158F096ED01EFAD6847D410C6658AF2</key>
 		<string>https://github.com/sumanroy666/Tabbed.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Tabbed.xcodeproj/project.xcworkspace</string>
+	<string>Tabbed.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>71824E101158F096ED01EFAD6847D410C6658AF2</key>

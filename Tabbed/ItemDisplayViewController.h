@@ -11,6 +11,7 @@
 @interface ItemDisplayViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *itemDisplayLabel;
+- (IBAction)tapHandler:(id)sender;
 
 @end
 

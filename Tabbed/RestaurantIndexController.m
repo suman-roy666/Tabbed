@@ -64,7 +64,7 @@
                                                       tempRest3,
                                                       nil];
         
-        _item = [[ NSString alloc] initWithString:@"" ];
+        _item = @"";
         
     }
     return self;
