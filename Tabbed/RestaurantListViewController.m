@@ -34,6 +34,13 @@ NSString *cellIdentifier = @"RestaurantListCell";
     restIdx = [ RestaurantIndexController getRestaurantIndexController ];
 }
 
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Table Delegate Methods
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
     return [ restIdx.restaurantIndex count  ];
@@ -51,10 +58,6 @@ NSString *cellIdentifier = @"RestaurantListCell";
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     

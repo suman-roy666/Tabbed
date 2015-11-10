@@ -10,7 +10,7 @@
 #import "RestaurantIndexController.h"
 #import "ItemDisplayViewController.h"
 
-@interface HomeScreenTabBarController ()
+@interface HomeScreenTabBarController ()<UITabBarControllerDelegate>
 
 
 @end
@@ -22,10 +22,13 @@
 
 static NSMutableArray *currentTabViewControllers;
 static NSArray *allTabViewControllers;
+#pragma mark - View LifeCycle Method
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.delegate=self;
     
     allTabViewControllers = [ NSArray arrayWithArray:self.viewControllers];
     
@@ -45,7 +48,18 @@ static NSArray *allTabViewControllers;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+#pragma mark - Tabbar Controller Delegate Methods
 
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController;
+{
+    if (tabBarController.selectedIndex==0) {
+        
+        UINavigationController *restaurantNavigationController = (UINavigationController *)viewController;
+        [restaurantNavigationController popToRootViewControllerAnimated:YES];
+    }
+}
+
+#pragma mark - Nsnotification Observer Methods
 - (void)observeValueForKeyPath:(NSString *)keyPath
                       ofObject:(id)object
                         change:(NSDictionary *)change
@@ -65,14 +79,5 @@ static NSArray *allTabViewControllers;
     
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
