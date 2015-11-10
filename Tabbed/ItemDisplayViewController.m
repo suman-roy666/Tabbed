@@ -8,7 +8,6 @@
 
 #import "ItemDisplayViewController.h"
 #import "RestaurantIndexController.h"
-#include "RectangleView.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface ItemDisplayViewController ()
@@ -23,6 +22,7 @@ static int tapCount = 0;
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     RestaurantIndexController *restIdx= [ RestaurantIndexController getRestaurantIndexController ];
+
     
     [ self.itemDisplayLabel setText:restIdx.item ];
     
@@ -64,8 +64,6 @@ static int tapCount = 0;
             [ self.itemDisplayLabel setTextColor:[ UIColor blackColor]];
             break;
     }
-    
-    
-    
+      
 }
 @end

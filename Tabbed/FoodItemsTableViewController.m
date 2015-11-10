@@ -57,7 +57,8 @@
         
     }
     
-    cell.text = self.foodItems[ indexPath.row + 1 ];
+    [ cell.textLabel setText:self.foodItems[ indexPath.row + 1 ]];
+  
     
     return cell;
 }

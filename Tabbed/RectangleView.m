@@ -7,6 +7,7 @@
 //
 
 #import "RectangleView.h"
+#import "RestaurantIndexController.h"
 #import <QuartzCore/QuartzCore.h>
 
 @implementation RectangleView
@@ -15,18 +16,15 @@
     // Drawing code
     
     CGContextRef context =  UIGraphicsGetCurrentContext();
-    //NSArray *arry= self.subviews;
-        
-    //UILabel *itemLabel = arry[2];
+//    NSArray *arry= self.subviews;
+//        
+//    UILabel *itemLabel = arry[0];
     
     CGContextSetRGBFillColor(context, 1.0, 0.0, 0.0, 0.0);   //this is the transparent color
-    CGContextSetRGBStrokeColor(context, 1.0, 0.0, 0.0, 1.0);
-    CGContextSetLineWidth(context, 4 );
-    //CGContextAddRect(context, rect);
-    //CGContextFillRect(context, rect);
+    CGContextSetRGBStrokeColor(context, 0.4, 0.3, 0.8, 1.0);
+    CGContextSetLineWidth(context, 8 );
     CGContextStrokeRect(context, rect );
     
-
 }
 
 @end
